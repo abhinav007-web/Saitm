@@ -1,0 +1,239 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header styles */
+.top-bar {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #e7e7e7;
+    padding: 5px 0;
+}
+
+.top-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-links svg {
+    width: 16px;
+    height: 16px;
+    fill: #666;
+}
+
+.admission-info {
+    display: flex;
+    align-items: center;
+}
+
+.phone-icon {
+    color: #e74c3c;
+    margin-right: 5px;
+}
+
+.apply-now-btn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 5px 15px;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-left: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Navigation styles */
+.main-nav {
+    background-color: white;
+    border-bottom: 1px solid #e7e7e7;
+    padding: 10px 0;
+}
+
+.main-nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+}
+
+.logo img {
+    margin-right: 10px;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-text span:first-child {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.logo-text span:last-child {
+    font-size: 14px;
+    color: #666;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Hero section styles */
+.hero {
+    background: linear-gradient(135deg, rgba(231, 76, 60, 0.1) 0%, rgba(52, 152, 219, 0.1) 100%);
+    padding: 40px 0;
+}
+
+.hero .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.institute-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.institute-info img {
+    margin-right: 20px;
+}
+
+.institute-info h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.institute-info p {
+    font-size: 18px;
+}
+
+.location {
+    color: #666;
+}
+
+.accreditations {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.separator {
+    margin: 0 10px;
+    color: #ccc;
+}
+
+.courses {
+    margin-bottom: 20px;
+}
+
+.course-row {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.course {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.apply-now-btn.large {
+    font-size: 18px;
+    padding: 10px 30px;
+    display: inline-block;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .top-bar .container,
+    .main-nav .container,
+    .hero .container {
+        flex-direction: column;
+    }
+
+    .admission-info,
+    .nav-links,
+    .hero-content,
+    .hero-image {
+        margin-top: 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hero-content {
+        padding-right: 0;
+    }
+
+    .course-row {
+        flex-wrap: wrap;
+    }
+
+    .course {
+        margin-bottom: 10px;
+    }
+}
+
